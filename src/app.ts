@@ -10,6 +10,7 @@ const app = express()
 // Most used for checking if the Model is connected to the corresponding collection in the database
 // mongoose.set('debug', true);
 
+app.use(express.json())
 
 try {
   connect()
